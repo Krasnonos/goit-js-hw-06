@@ -27,12 +27,15 @@ function handleCreateBtn() {
 
 
 function handleDestroyBtn() {
-  destroyBoxes()
+  destroyBoxes();
 }
 
 
 function destroyBoxes() {
   refs.mainBox.innerHTML = ``;
+  boxArreyEl = [];
+  height = 20;
+  width = 20;
 }
 
 
