@@ -1,4 +1,4 @@
-const ref = {
+const refs = {
     increment: document.querySelector('button[data-action="increment"]'),
     decrement: document.querySelector('button[data-action="decrement"]'),
     counter: document.querySelector('#value')
@@ -6,14 +6,14 @@ const ref = {
 
 let counterValue = 0;
 
-ref.increment.addEventListener('click', () => {
+refs.increment.addEventListener('click', () => {
     counterValue += 1;
 
-    ref.counter.textContent = counterValue;
+    refs.counter.textContent = counterValue;
 })
 
-ref.decrement.addEventListener('click', () => {
+refs.decrement.addEventListener('click', () => {
     counterValue -= 1;
 
-    ref.counter.textContent = counterValue;
+    refs.counter.textContent = counterValue;
 })
